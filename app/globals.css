@@ -8,3 +8,10 @@
     background-clip: text;
     color: transparent;
 }
+
+.about {
+    background-image: url("../public/images/about-img.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
