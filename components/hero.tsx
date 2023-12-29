@@ -35,12 +35,12 @@ export const Hero = () => {
                     className="max-[1110px]:w-[375px] max-[1110px]:h-[375px] max-[1050px]:w-[325px] max-[1050px]:h-[325px] max-[500px]:[275px] max-[500px]:h-[275px]"
                 />
             </Bounce>
-            <div className="mt-14 w-full flex flex-col items-end gap-4 max-[870px]:mt-8">
+            <div className="mt-12 w-full flex flex-col items-end gap-4 max-[870px]:mt-8">
                 <p className="text-2xl text-right text-[#182f2a] font-medium max-[870px]:text-xl">
                     Explore, educate, regenerate -<br />
                     your roadmap to a flourishing future.
                 </p>
-                <AttentionSeeker delay={700} effect="flash">
+                <AttentionSeeker delay={700} effect="flash" triggerOnce>
                     <button className="py-3 px-7 border-[3px] border-[#182f2a] text-[#182f2a] text-xl font-medium tracking-wide rounded-xl hover:bg-[#182f2a] hover:text-[#b1c8c3] transition-colors max-[870px]:text-lg max-[870px]:py-2">
                         Lets take Action
                     </button>
