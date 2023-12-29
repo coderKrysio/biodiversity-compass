@@ -7,7 +7,7 @@ import { Fade } from "react-awesome-reveal";
 export const Navbar = () => {
     const [openMenu, setOpenMenu] = useState(false);
     return (
-        <nav className="fixed top-0 left-0 w-screen h-[60px] flex items-center justify-between px-8 bg-[#bbcfcb] z-[10] max-[680px]:px-6">
+        <nav className="fixed top-0 left-0 w-screen h-[55px] flex items-center justify-between px-8 bg-[#bbcfcb] z-[10] max-[680px]:px-6">
             <Link
                 href={"/"}
                 className="flex text-2xl font-semibold gap-2 select-none"
