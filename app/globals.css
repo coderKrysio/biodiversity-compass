@@ -1,6 +1,41 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+html {
+    --scroll-behavior: smooth!important;
+    scroll-behavior: smooth!important;
+}
+
+
+/* width */
+
+::-webkit-scrollbar {
+    width: 0px;
+}
+
+
+/* Track */
+
+::-webkit-scrollbar-track {
+    background: transparent;
+    border-radius: 0px;
+}
+
+
+/* Handle */
+
+::-webkit-scrollbar-thumb {
+    background: transparent;
+    border-radius: 0px;
+}
+
+
+/* Handle on hover */
+
+::-webkit-scrollbar-thumb:hover {
+    background: transparent;
+}
+
 .hero {
     background-image: url("../public/images/hero-bg.jpg");
     background-size: 100% auto;
@@ -11,6 +46,13 @@
 
 .about {
     background-image: url("../public/images/about-img.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.issue--listing {
+    background-image: url("../public/images/issues-listing-bg.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
