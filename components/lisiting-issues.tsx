@@ -46,8 +46,8 @@ export const ListingIssues = () => {
     });
     const ar = [1, 2, 3];
     return (
-        <section className="w-full min-h-screen p-6 mt-[70px] flex flex-col items-items justify-center gap-[50px] max-[400px]:p-2">
-            <div className="w-full relative text-5xl font-medium leading-relaxed flex items-center justify-end max-[590px]:leading-loose max-[590px]:pr-4">
+        <section className="w-full min-h-screen p-6 mt-[70px] flex flex-col justify-center gap-[50px] max-[500px]:p-2">
+            <div className="w-full relative text-5xl font-medium leading-relaxed flex items-center justify-end max-[590px]:leading-loose max-[590px]:pr-4 max-[450px]:leading-relaxed select-none">
                 <div className="absolute left-0 bottom-[-60px] max-[810px]:hidden">
                     <Sprout width={150} height={150} strokeWidth={0.8} />
                 </div>
@@ -65,7 +65,7 @@ export const ListingIssues = () => {
                 </div>
             </div>
 
-            <div className="w-full h-[250px] shadow-lg shadow-[#182f2a] flex items-center justify-center rounded-3xl overflow-hidden">
+            <div className="w-full h-[250px] shadow-lg shadow-[#182f2a] flex items-center justify-center rounded-3xl overflow-hidden select-none">
                 <img
                     src="/images/issues-listingimg2.jpg"
                     className="w-1/2 mx-auto max-[950px]:w-full max-[520px]:w-auto max-[520px]:h-full max-[520px]:bg-center"
@@ -77,15 +77,10 @@ export const ListingIssues = () => {
             </div>
 
             <div className="bg-red-500 issue--listing">
-                <div className="p-4 px-7 max-[400px]:p-2">
-                    <AttentionSeeker
-                        effect="flash"
-                        damping={0.05}
-                        cascade
-                        className="text-4xl font-semibold tracking-wide text-white"
-                    >
+                <div className="p-4 px-7">
+                    <p className="text-4xl text-wrap font-semibold tracking-wide text-white select-none">
                         Individual Level
-                    </AttentionSeeker>
+                    </p>
                     <div className="flex flex-wrap justify-center items-start gap-[120px] my-9 relative">
                         {individual.map(
                             (
@@ -137,14 +132,9 @@ export const ListingIssues = () => {
                 </div>
 
                 <div className="p-4 px-7">
-                    <AttentionSeeker
-                        effect="flash"
-                        damping={0.05}
-                        cascade
-                        className="text-4xl font-semibold tracking-wide text-white"
-                    >
+                    <p className="text-4xl text-left font-semibold tracking-wide text-white select-none">
                         Agricultural Level
-                    </AttentionSeeker>
+                    </p>
                     <div className="flex flex-wrap justify-center items-start gap-[120px] my-9 relative">
                         {agriculture.map(
                             (
@@ -196,14 +186,9 @@ export const ListingIssues = () => {
                 </div>
 
                 <div className="p-4 px-7">
-                    <AttentionSeeker
-                        effect="flash"
-                        damping={0.05}
-                        cascade
-                        className="text-4xl font-semibold tracking-wide text-white"
-                    >
+                    <p className="text-4xl font-semibold tracking-wide text-white select-none">
                         Policy & Governance Level
-                    </AttentionSeeker>
+                    </p>
                     <div className="flex flex-wrap justify-center items-start gap-[120px] my-9 relative">
                         {policy.map(
                             (
