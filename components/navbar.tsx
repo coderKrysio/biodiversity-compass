@@ -15,28 +15,28 @@ export const Navbar = () => {
                 <img src="/images/logo.png" width={30} height={30} />
                 Bio Compass
             </Link>
-            <div className="flex items-center justify-end gap-1 h-full max-[680px]:hidden">
+            <div className="flex items-center justify-end gap-1 h-full max-[680px]:hidden select-none">
                 <Link
-                    href={"/"}
-                    className="h-full mr-3 w-[85px] border-b-[3px] border-transparent flex items-center justify-center transition-colors hover:font-medium hover:border-[#182f2a]"
+                    href={"#about-us"}
+                    className="h-full mr-3 w-[85px] border-b-[4px] border-transparent text-lg flex items-center justify-center transition-colors hover:font-medium hover:border-[#182f2a]"
                 >
                     About
                 </Link>
                 <Link
-                    href={"/"}
-                    className="h-full mr-3 w-[85px] border-b-[3px] border-transparent flex items-center justify-center transition-colors hover:font-medium hover:border-[#182f2a]"
+                    href={"#issues"}
+                    className="h-full mr-3 w-[85px] border-b-[4px] border-transparent text-lg flex items-center justify-center transition-colors hover:font-medium hover:border-[#182f2a]"
                 >
                     Issues
                 </Link>
                 <Link
-                    href={"/"}
-                    className="h-full mr-3 w-[85px] border-b-[3px] border-transparent flex items-center justify-center transition-colors hover:font-medium hover:border-[#182f2a]"
+                    href={"#actions"}
+                    className="h-full mr-3 w-[85px] border-b-[4px] border-transparent text-lg flex items-center justify-center transition-colors hover:font-medium hover:border-[#182f2a]"
                 >
-                    Solutions
+                    Actions
                 </Link>
                 <Link
-                    href={"/"}
-                    className="h-full mr-3 w-[85px] border-b-[3px] border-transparent flex items-center justify-center transition-colors hover:font-medium hover:border-[#182f2a]"
+                    href={"#resources"}
+                    className="h-full mr-3 w-[85px] border-b-[4px] border-transparent text-lg flex items-center justify-center transition-colors hover:font-medium hover:border-[#182f2a]"
                 >
                     Resources
                 </Link>
@@ -51,11 +51,11 @@ export const Navbar = () => {
                 />
                 {openMenu && (
                     <Fade duration={300}>
-                        <div className="absolute right-0 flex flex-col items-center justify-center m-4 rounded-xl text-xl font-medium gap-4 p-4 bg-[#3d776b]">
-                            <Link href={"/"}>About</Link>
-                            <Link href={"/"}>Issues</Link>
-                            <Link href={"/"}>Solutions</Link>
-                            <Link href={"/"}>Resources</Link>
+                        <div className="absolute right-0 flex flex-col items-center justify-center m-4 rounded-xl text-xl font-medium gap-4 p-4 bg-[#3d776b] select-none">
+                            <Link href={"#actions"}>About</Link>
+                            <Link href={"#issues"}>Issues</Link>
+                            <Link href={"#actions"}>Actions</Link>
+                            <Link href={"#resources"}>Resources</Link>
                         </div>
                     </Fade>
                 )}

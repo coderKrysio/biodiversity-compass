@@ -57,3 +57,10 @@ html {
     background-size: cover;
     background-attachment: fixed;
 }
+
+.actions--banner {
+    background-image: url("../public/images/actions-img.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
