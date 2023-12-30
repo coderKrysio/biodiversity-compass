@@ -1,9 +1,11 @@
 import { About } from "@/components/about";
+import { Footer } from "@/components/footer";
 import { Hero } from "@/components/hero";
 import { Issues } from "@/components/issues";
 import { ListingIssues } from "@/components/lisiting-issues";
 import { Navbar } from "@/components/navbar";
-import { Services } from "@/components/services";
+import { Resources } from "@/components/resources";
+import { Actions } from "@/components/actions";
 
 export default function Home() {
     return (
@@ -13,7 +15,9 @@ export default function Home() {
 			<About />
 			<Issues />
             <ListingIssues />
-            {/* <Services /> */}
+            <Actions />
+            <Resources />
+            <Footer />
         </main>
     );
 }
