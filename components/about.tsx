@@ -4,23 +4,31 @@ import { Bounce, Fade, Slide } from "react-awesome-reveal";
 
 export const About = () => {
     return (
-        <section className="w-full min-h-screen p-6 mt-[70px] flex flex-col items-items justify-center about">
+        <section
+            id="about-us"
+            className="w-full min-h-screen p-6 pt-[100px] flex flex-col items-items justify-center about"
+        >
             <div className="text-7xl text-[#fff] font-bold text-center flex items-center justify-center ml-[175px] mb-8 z-[1] max-[540px]:ml-[100px] max-[470px]:ml-[30px] max-[400px]:ml-0">
                 <div className="absolute left-[-100px] w-1/2 h-4 bg-[#779f97] rounded-r-xl max-[540px]:left-[-150px]" />
-                <Bounce triggerOnce className="text-center w-full">About Us</Bounce>
+                <Bounce triggerOnce className="text-center w-full select-none">
+                    About Us
+                </Bounce>
             </div>
             <div className="relative w-full flex items-center justify-start pb-6 bg-[#b1c8c3] bg-opacity-60 my-16 rounded-2xl">
-                <div className="w-[650px] h-full relative text-2xl font-semibold flex items-center p-8 pl-14 z-[1] max-[1220px]:pl-8 max-[1170px]:w-[550px] max-[1070px]:w-auto max-[550px]:p-4">
+                <div className="w-[650px] h-full relative text-2xl font-semibold flex items-center p-8 pl-14 z-[1] max-[1220px]:pl-8 max-[1170px]:w-[550px] max-[1070px]:w-auto max-[550px]:p-4 select-none">
                     <Slide triggerOnce>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing
-                        elit. Ad eveniet, ut rerum, nobis atque cupiditate
-                        similique deserunt aspernatur est repellendus laudantium
-                        voluptatibus quia excepturi harum, in natus voluptates
-                        accusantium enim! Lorem ipsum dolor sit amet
-                        consectetur, adipisicing elit. Esse a delectus corrupti
-                        deserunt illo minima, voluptates possimus vel itaque
-                        magnam, sed eius obcaecati porro amet ratione iusto
-                        natus officiis placeat?
+                        <p>
+                            Verdant landscapes. Birdsong in lush rainforests.
+                            Shimmering coral reefs. Fertile fields nourishing
+                            communities. This thriving future, Biodiversity
+                            Compass charts the course.
+                            <br /> <br />
+                            Empowering movement, not just a company. We equip
+                            individuals, farmers, and policymakers with
+                            practical solutions to land degradation and
+                            biodiversity loss. Community gardens to protected
+                            areas, we guide every step of the way.
+                        </p>
                     </Slide>
                     <div className="absolute right-[-72px] bottom-0 flex gap-3 max-[1360px]:right-[42px]">
                         <LeafyGreen
@@ -37,7 +45,10 @@ export const About = () => {
                         />
                     </div>
                 </div>
-                <Fade triggerOnce className="absolute right-[15%] top-[-1/2] max-[1070px]:hidden">
+                <Fade
+                    triggerOnce
+                    className="absolute right-[15%] top-[-1/2] max-[1070px]:hidden"
+                >
                     <div className="w-fit h-[550px] p-4 bg-[#3d776b] shadow-xl shadow-[#182f2a] rounded-2xl flex items-center justify-center max-[1220px]:h-[525px]">
                         <img
                             src="/images/about-bg.jpg"
