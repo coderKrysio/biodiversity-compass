@@ -22,12 +22,12 @@ export const IssueCard = ({
                     <Icon />
                 </div>
 
-                <div className="w-full px-[30px] text-3xl font-bold max-[400px]:px-4">
+                <div className="w-full px-[30px] text-3xl font-bold max-[400px]:px-4 select-none">
                     {title}
                 </div>
 
-                <div className="w-full px-[30px] leading-tight max-[400px]:px-4">
-                    {summary}
+                <div className="w-full px-[30px] leading-tight max-[400px]:px-4 select-none">
+                    {summary} <span className="underline">More</span>
                 </div>
             </div>
         </div>
@@ -46,17 +46,19 @@ export const CardDetail = ({
     return (
         <JackInTheBox
             triggerOnce
-            className="w-full mt-[456px] h-[410px] absolute left-0 bg-white bg-opacity-75 rounded-2xl shadow-2xl max-[1060px]:h-[720px]"
+            className="w-full mt-[456px] h-[410px] absolute left-0 bg-white bg-opacity-75 rounded-2xl shadow-2xl max-[1060px]:h-[720px] max-[450px]:ml-[-14px] max-[450px]:w-[110%]"
         >
-            <div className="w-full h-full flex items-center justify-center p-5 gap-7 max-[1060px]:flex-col">
-                <div className="w-full max-h-full min-h-fit flex flex-col gap-5">
-                    <div className="text-3xl font-semibold">{title}</div>
-                    <div className="text-lg font-medium max-[750px]:h-[280px] max-[750px]:text-ellipsis max-[750px]:overflow-hidden">
+            <div className="w-full h-full flex items-start justify-center p-5 gap-7 max-[1060px]:flex-col max-[450px]:p-3">
+                <div className="w-full h-full flex flex-col gap-5 max-[1060px]:h-fit">
+                    <div className="text-3xl font-semibold select-none">
+                        {title}
+                    </div>
+                    <div className="text-lg font-medium max-[750px]:h-[280px] max-[750px]:text-ellipsis max-[750px]:overflow-hidden select-none">
                         {description}
                     </div>
                 </div>
 
-                <div className="w-full h-full rounded-lg overflow-visible">
+                <div className="w-full h-full rounded-lg overflow-visible max-[450px]:h-[400px]">
                     <iframe
                         src={iframesrc}
                         loading="eager"
